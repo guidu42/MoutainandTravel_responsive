@@ -1,0 +1,761 @@
+/*- FONTS ----------------------- */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?aiboq2');
+  src:  url('../fonts/icomoon.eot?aiboq2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aiboq2') format('truetype'),
+    url('../fonts/icomoon.woff?aiboq2') format('woff'),
+    url('../fonts/icomoon.svg?aiboq2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-course:before {
+  content: "\e900";
+}
+.icon-equitation:before {
+  content: "\e901";
+}
+.icon-logo:before {
+  content: "\e902";
+}
+.icon-natation:before {
+  content: "\e903";
+}
+.icon-parapente:before {
+  content: "\e904";
+}
+.icon-peche:before {
+  content: "\e905";
+}
+.icon-quote:before {
+  content: "\e906";
+}
+.icon-rando:before {
+  content: "\e907";
+}
+.icon-ski:before {
+  content: "\e908";
+}
+.icon-velo:before {
+  content: "\e909";
+}
+
+
+section{margin-bottom:5rem;}
+
+body{
+  color: #e39020;
+  background-color: #FAFAFA;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+p{
+  color:#b9b9b9;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.centrer_paragraphe{
+  text-align: center;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: auto;
+}
+h1 i{
+  font-size: 4rem;
+}
+h2{
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 5rem 0 3rem 0;
+  padding-bottom: 1rem;
+}
+h2:after{
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 5px;
+  background-color: #e39020;
+  bottom: 0;
+  left:0;
+}
+
+.presentation{
+  padding: 0 10rem;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+.images_ligne{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.images_ligne a{
+  color: #b9b9b9;
+  font-size: 1rem;
+  text-align: center;
+}
+.images_ligne a i{
+  display: block;
+  font-size:4rem;
+  transform: rotate(-360deg);
+  transition: all 0.6s ease;
+}
+.images_ligne a span{
+  display: block;
+  transition: all 0.6s ease;
+}
+.images_ligne a:hover span{
+  color: #e39020;
+  transform: scale(1.5);
+  font-weight: bold;
+}
+.images_ligne a:hover i{
+  color: #e39020;
+  transform: rotate(360deg);
+}
+
+.container_sejour{
+  display: flex;
+  justify-content: space-between;
+}
+.sejour{
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  width: 25%;
+  transition: all 0.3s ease;
+}
+.photo_sejour{
+  border: 0px solid black;
+  border-radius: 10px / 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.text_sejour{
+  background-color: #FAFAFA;
+  max-height: 200px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(10%, -10%);
+}
+
+.prix{
+  position: absolute;
+  padding: 2px 6px;
+  background-color: #e39020;
+  color: #FAFAFA;
+  right: 0;
+  top: 5%;
+  font-weight: bold;
+}
+.text_sejour h3{
+  margin: 0;
+  text-align: left;
+}
+.text_sejour h3+p{
+  color: #e39020;
+}
+.text_sejour p{
+  margin: 10px 0;
+  max-height: 75px;
+  overflow: hidden;
+  text-align: left;
+}
+p.calltoaction{
+  margin-bottom: 0;
+}
+.sejour:hover{
+  transform: scale(1.05);
+}
+.sejour:hover .text_sejour{
+  background-color:  #e39020;
+  color: #FAFAFA;
+}
+.sejour:hover .text_sejour p{
+  color: #FAFAFA;
+}
+
+
+.carte{
+  display: flex;
+  align-items: center;
+}
+
+.carte_content{
+  width: 50%;
+}
+.carte_image{
+  width: 50%;
+}
+
+.centrer_button{
+  text-align: center;
+}
+
+.button{
+  display: inline-block;
+  padding: 10px;
+  color: #e39020;
+  background-color: transparent;
+  border: 1px solid #e39020;
+  border-radius: 10px/10px;
+  width: auto;
+  margin: auto;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.button:hover{
+  color: #FAFAFA;
+  background-color: #e39020;
+  transform: scale(1.1);
+}
+.btn_white{
+  display: inline-block;
+  padding: 10px;
+  color: #FAFAFA;
+  background-color: transparent;
+  border: 1px solid #FAFAFA;
+  border-radius: 10px/10px;
+  width: auto;
+  margin: auto;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.btn_white:hover{
+  color: black;
+  background-color: #FAFAFA;
+  transform: scale(1.1);
+}
+.btn_white_transparent{
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  background-color: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  border-radius: 10px/10px;
+  width: auto;
+  margin: auto;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.btn_white_transparent:hover{
+  color: #FAFAFA;
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+
+header{
+  position: fixed;
+  width: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+  z-index: 99;
+}
+header:hover{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%);
+
+}
+.top_barre{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.9rem 0;
+}
+.top_barre a{
+  color: black;
+  margin: 0;
+  padding: 4px;
+}
+.top_barre i{
+  color: white;
+  font-size: 0.8rem;
+  padding-right: 4px;
+}
+.icon_respo{
+  display: none;
+}
+
+#menuToggle{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+#menuToggle input
+{
+  display: none;
+  width: 36px;
+  height: 28px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0;
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+}
+#menuToggle span
+{
+  display: none;
+  position: relative;
+  width: 27px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #FAFAFA;
+  border-radius: 3px;
+  box-sizing: border-box;
+  z-index: 1;
+
+  transform-origin: 3px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+  margin-bottom: 0;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menuToggle input:checked ~ .menu
+{
+  display:block;
+  transform: none;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #FAFAFA;
+}
+
+.menu_logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #e39020;
+}
+.menu_logo i{
+  font-size: 4rem;
+}
+.menu li{
+  display: inline;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px white solid;
+}
+.menu li:hover{
+  color:  #e39020;
+}
+.menu li:first-child{
+  padding-left: 0;
+  border: none;
+}
+.menu li:last-child{
+  padding-right: 0;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+
+.banniere{
+  position: relative;
+}
+.banniere:before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 200px;
+	bottom: 0;
+	left: 0;
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1920 200' enable-background='new 0 0 1920 200' xml:space='preserve'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23FAFAFA' d='M0,177.1V200h1920V8.1l-1.1-2L1920,6V3.6c-1.1,1.3-2,3.5-2.8,5.4 c-1.3-3.5-2.7-5.9-4.6-7.1l-5.6,13.8c-1.9-5.3,1.7-11-4.1-13.6c-2.6,6.4,5.6,11.9,0.2,16.3c-4.9-6-4.6-11.2-8.2-5.5 c-1.2-3.2-0.8-5.5,0.5-7.1c-3.3,4-9.9,2.3-10.7,9.6c-5.3-7.5-13.1,3-15-10.1c-0.7,3.2-5.3,10.8-8.8,11.6c4-16.1-13.8,0.1-15-16.8 c-2.5,14.4-16.9,7.6-24.2,15.9c0.3-1,0.7-2.7,1.4-2.9c-4.8-1-7-5-10.5-7.3c1.4,11.7-5.9,14.9-8.8,22.4c-7.9-10.8,1.4-13.9-2.4-24.6 c1.9,9.4-8.9,10.2-5.5,17.8c-5.8-6.6-4.6-3.1-8.6-12.6c1.7,14.6-3.9,2.8-6.2,11.9c-7.9-6.7-4-13.5-10.7-8.5 c-4.2-4.2,1.4-9.8,1.4-9.8c-7.6,0.3-1.7,11-2.2,17.4c-8.4,3.7-5.5-7.7-9.5-13.1c-5.1,3.3-7.6,13.7-11.9,13.5c-0.6-1.8-1.6-2.4-1-4.7 c-4.4,9.1-17.5,1.7-22.5,13.1c-0.7-1-1.1-1.8-1.4-2.7c2.1,5.4,3.1,11,3.6,15c-3.3,0.4-5.1,7.4-7.6,0.3c2.1,0.1,1.8-2.9,2.4-5.1 l-2.9,3.4c-4.9-10.1,4.2-3.9,2.9-11.6c-6.3,3.8-12.8,13-18.6,10.4c-2.8-10,11.8-4.3,3.1-12.7l8.8,3.3c-8.9-15.4,5.1,0.8-3.5-15.8 c-11.2-2.2-11.1,6-22.3,3.8c-1.5,5.8,2.3,8.2,0.8,14c-13.4,11.2-16.3-24.5-25.1-10.3c-1.8,6.9-0.7,19.8-9.8,13.6l0.8-11.6 c-10.6-0.4-3.1,16.8-15.3,9.9c1.2-4.6,7.6-4.4,5.7-5.6c-8.5-8.5-3.9,6.8-9.3,7.2l-2.8-10c-10.8,2.3-21.7,10.5-33.6,13.3 c0.2-3,1.8-6.4-1.7-9.2c-14.5,6.2-33.1,1.1-49-3.8l-4.2,9.1c-1.4,0-3.1-3.7-2-5.5c-6.4-2.9,0.7,5.5-1.6,9.1 c-3.2,0.8-5.2-4.7-3.5-7.4c-8.9,8.1-26.4,18-38.8,9.5l1.7-2.7c-9-2.9-6.5,18.5-15.6,11l1.3-1.7c-18.8-2.5-37.7,6.9-53.7-5.2 c-0.5,12.7-19-4.3-17.2,13.3c-11.9-7.9-9.4-11.2-25.1-16.1c-4-0.5-3.9,11.4-8.5,13.5l-1.7-9.1l-4.9,10l-5.4-10.7l-4.1,2.7 c1.9,0.4,4.5,3.8,4.7,6.5c-6.4,4.6-18.3-5.1-19.3-9.8l-15.5,9c-0.2-2.7,1.2-4.2,2.5-5.8c-5.2,5.1-2.3-10.7-8.4-2.3 c1.5,2,0.3,5.5,0.5,7.4c-5-5.2-14.3-4.6-20.8-1.8l0.3-6.4c-12.7-0.7-25.7,4.9-39.7,5.8c5.5,2.6,6.2,13.6,2.4,14.9l-3.2-9.5 c-1.7,6.2,4.9,3.4,0.7,11.1c-5.4-0.8-5.4-10.7-2.9-14.1l-5.8,3.8c-0.9-2.9,0.4-4.5,0.1-8.2c-1.6,6.2-12.6-8.9-14.6,1.8l-0.9-2.9 c-13.9,0.9-19.7,4.7-31,6c1.2,8.4-3.5,6.8-5.8,13.8c-8.8-2-19.2-7.9-29.1-6.5c-6.4,4.6-0.9,7.2-3.2,12.4c-1.9-7.6-11.8-6.2-7.5-11.9 c-11.9,2.1-15.2,2.6-29.4,9.9c2.2,3,4.3,4.2,3.7,6.9c-2.5,1.5-6.9-2.7-7.1-6.4l0.6-0.8c-15,12.4-42.5-18.3-53.7-3.3l-12.6,9.2 c-6.8-0.8,2.9-6-2.6-10.4c-13.1,13.8-24.4-0.1-35.6,9.2c-13.5-21.7-34.3,4.1-49.8-9.3l1.7,5.2c-2.5,5.4-4.6-2.7-7.4-3.7 c1.1,4.1,4.5,4.5,2.8,7.5c-27.7,8.4-60.7-3.5-91-6.1c-11-0.6-1.5,27.8-17.3,16.1l2.2-10.1c-19.8,13.3-44.6,2.8-64.2,14.3 c0.9-2.3,0.4-5.3,2.5-5.4c-5.7-6.8-16.7,0.8-15.8,6.7c-3.4-0.4-1.7-5.2-4.2-8c-5.2-3.9-9.8,9.9-13.4,3c-0.4-0.7,0.1-1.5,0.6-2.1 c-3.5,2.2-12.5,0-8.6,7.2c-8.6-3.4-14.7,4.8-21.9,0.3c-2.5,9.5-14.4-3.4-13.5,9.7c-1.8-13.5-15.9-9.8-19.8-3.2 c1-4.2-5.1-3.9-4.1-9.7c-5.8,0.6-10.6,3.5-8.4,10.3c-13.3-15.3-19.1,14.5-28.6-5.7c-15.9,8.4-31,14.5-45.8,18.7 c-1.8-13.4,16.9-2.5,13.7-16.6c-13.7,6.5-20.2,18.7-35.2,16.4c-4-1.5,1.2-6,2.1-8.3c-13.6,6.5-28.4,0.8-40.2,9 c3.7,7.9-6.5,17.2-7.3,22c0.9-16.6-13.6-3-10.5-25.3c-1.5,1.3-3.1,4.3-2.1,8.3c-2.7-1-3.9-3.3-2.2-8.1c-8.6,3.9-4.2,10.2-12.6,10.7 c-0.5-2.9,1-4.2,1.3-7.7c-3.2,6-6.5,12.1-13.9,10.1c0.1-1.7-0.9-3.6,0.5-4.1c-11.6,2.1-17.7,16.6-31.7,12.1 c1.8-13.1-5.2-3.9-7.8-14.9l-6.6,3.8l3.7,5.1c-6.3,0.3-10.4,8.7-16.4,5.5l3.8-4.9l-11.4,2.9l7.4,3.7c-5.3,6.2,3,14-5.8,11.5 c1.5-1.3-6.3,0.3-10.6-6l0,0c-2.5,3.7-5,7.7-10.1,5.3c-1.8-3.4-1.1-12.3-2.4-14.6c-1.5,9.2-13.5,3.9-16.2,13 c0.5-2.7-0.3-7.6-0.9-8.6l-1.3,7.7c-3.3-2.2-3.9-3.4-4.2-8c-8.9-0.8,5.2,13.8-6.2,8.5c0.7-0.6,0.1-1.8,1.7-3 c-10.9-2.4-19.2,6.2-29.3,3.2c-4.7-10.9,7.8-3.3,3-12.5c-13.3,3-26.2,15.4-39.9,13.7l2.6,1.1c0.8,15.6-10.8-6.4-16.4,0.5 c1.1-2,0.4-8.4,0.3-6.7c-9.5-1.9-17.9,5.2-30.9,11.1l1-4.2c-6-3.2-14.5-1.1-20.6-2.5c-1.1,4.1-4.4,3.7-1.5,9.5 c-21.8-21.7-32,14.8-51.1-3.2c1.9-0.2,3.9-3.9,2.5-3.7l-12.8,4.7c2.3,6.8,2.5,4,6.2,9.1c-1,4.2-4.3,7.6-7.6,7.9c5.3-5-2-11-5.2-14.7 c0.8,2.1,0.3,4.4,0.9,6.5c-9.1-11.7,1.2,13.9-9.9,6.4l-0.1-3.6c-3.3,2.1-5.8,7.1-9.9,6.4c-2.9-7.8,3.2-4,2.4-10.5 c-5.4,0.8-8.2,15.8-14.5,8.3c2-2.3,5.3-2.7,7.3-5c-7-8.9-7.2-6.5-11.5-7.7l0.4,0.2l-10-3.6l2.7,2.3c-3.3,21.1-13.2,4.8-20.1,19 c6.8-13.5,0.2-7.5-0.6-16.6c-2.7-2.3-6.9-4.9-6.3-7.5c-3.1,7.6-8.2-5.2-12.6,5.8c-0.8-2.9-4.7,0.1-5-7.3c-5.3,2.7,2.2,5,2.4,8.6 c-7.1,10.5-22.6-10.5-32.8,3.9c-7.9,5.1-9.7,12.6-15,18.2l-6,0.4c-0.5-3.7,2.5-7.6,2.5-7.6c-6.2-3.9-10.2-2.8-14.7,0.9 c0.6-2.6-0.8-4.6-2.9-7.8c-4,1.1-1,10.7-7.2,6.9c0.4-3.3,0.7-8.5,2.2-11.9c-4.4,3-8.3,8.8-12.8,11.7c-2.2-5,1.8-7.9,2.9-11.3 c-5.3,2.7-13.9,5.6-14.3,13.7l3,1.9c-1-1.8-0.9-6.5,0.1-7.7c3.8-6.6,7.5,2.3,8.2,5.1l-3.2,2.1c1.3,3.2,2.6,5.1,3.9,6l-19.4,1.3 c2.4-5.1,4.4-13.3,0.9-21.8c-1.7,9.7-3.1,5.8-4.8,17.3c-2.6,1.3-5.5-2.8-5.6-6.4c-0.6,2.6-4.7-1.8-5.2,4.4c5,7.4,9.7,7.3,13.4,0.7 c1.3,1.8,1,4.1,0.9,5.8L0,177.1z'/%3E%3C/svg%3E%0A");
+	background-size: cover;
+}
+.photo_banniere{
+  display: block;
+
+  width:100%;
+  max-width: 100%;
+}
+.fleche{
+  position: absolute;
+  display: block;
+  font-size: 3rem;
+  color: #FAFAFA;
+  padding: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  border: 1px solid rgba(0,0,0,0);
+}
+.fleche_gauche{
+  left: 3rem;
+}
+.fleche_droite{
+  right: 3rem;
+}
+.fleche:hover {
+  color:  #e39020;
+  border: 1px solid #e39020;
+  background-color: #FAFAFA;
+  border: 1px solid #e39020;
+}
+
+.group_bullet{
+  display: none;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bullet{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 4px;
+}
+.bullet:first-child{
+  background-color: white;
+}
+.texte_banniere{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #FAFAFA;
+  width: 100%;
+}
+.texte_banniere p{
+  color: #FAFAFA;
+  width: 60%;
+  margin: auto;
+}
+.titre_banniere{
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer{
+  background-color: black;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+footer:before{
+  position: absolute;
+  content:"";
+  width: 100%;
+  height: 200px;
+  top:0;
+  left:0;
+  transform: rotate(-180deg);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1920 200' enable-background='new 0 0 1920 200' xml:space='preserve'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23FAFAFA' d='M0,177.1V200h1920V8.1l-1.1-2L1920,6V3.6c-1.1,1.3-2,3.5-2.8,5.4 c-1.3-3.5-2.7-5.9-4.6-7.1l-5.6,13.8c-1.9-5.3,1.7-11-4.1-13.6c-2.6,6.4,5.6,11.9,0.2,16.3c-4.9-6-4.6-11.2-8.2-5.5 c-1.2-3.2-0.8-5.5,0.5-7.1c-3.3,4-9.9,2.3-10.7,9.6c-5.3-7.5-13.1,3-15-10.1c-0.7,3.2-5.3,10.8-8.8,11.6c4-16.1-13.8,0.1-15-16.8 c-2.5,14.4-16.9,7.6-24.2,15.9c0.3-1,0.7-2.7,1.4-2.9c-4.8-1-7-5-10.5-7.3c1.4,11.7-5.9,14.9-8.8,22.4c-7.9-10.8,1.4-13.9-2.4-24.6 c1.9,9.4-8.9,10.2-5.5,17.8c-5.8-6.6-4.6-3.1-8.6-12.6c1.7,14.6-3.9,2.8-6.2,11.9c-7.9-6.7-4-13.5-10.7-8.5 c-4.2-4.2,1.4-9.8,1.4-9.8c-7.6,0.3-1.7,11-2.2,17.4c-8.4,3.7-5.5-7.7-9.5-13.1c-5.1,3.3-7.6,13.7-11.9,13.5c-0.6-1.8-1.6-2.4-1-4.7 c-4.4,9.1-17.5,1.7-22.5,13.1c-0.7-1-1.1-1.8-1.4-2.7c2.1,5.4,3.1,11,3.6,15c-3.3,0.4-5.1,7.4-7.6,0.3c2.1,0.1,1.8-2.9,2.4-5.1 l-2.9,3.4c-4.9-10.1,4.2-3.9,2.9-11.6c-6.3,3.8-12.8,13-18.6,10.4c-2.8-10,11.8-4.3,3.1-12.7l8.8,3.3c-8.9-15.4,5.1,0.8-3.5-15.8 c-11.2-2.2-11.1,6-22.3,3.8c-1.5,5.8,2.3,8.2,0.8,14c-13.4,11.2-16.3-24.5-25.1-10.3c-1.8,6.9-0.7,19.8-9.8,13.6l0.8-11.6 c-10.6-0.4-3.1,16.8-15.3,9.9c1.2-4.6,7.6-4.4,5.7-5.6c-8.5-8.5-3.9,6.8-9.3,7.2l-2.8-10c-10.8,2.3-21.7,10.5-33.6,13.3 c0.2-3,1.8-6.4-1.7-9.2c-14.5,6.2-33.1,1.1-49-3.8l-4.2,9.1c-1.4,0-3.1-3.7-2-5.5c-6.4-2.9,0.7,5.5-1.6,9.1 c-3.2,0.8-5.2-4.7-3.5-7.4c-8.9,8.1-26.4,18-38.8,9.5l1.7-2.7c-9-2.9-6.5,18.5-15.6,11l1.3-1.7c-18.8-2.5-37.7,6.9-53.7-5.2 c-0.5,12.7-19-4.3-17.2,13.3c-11.9-7.9-9.4-11.2-25.1-16.1c-4-0.5-3.9,11.4-8.5,13.5l-1.7-9.1l-4.9,10l-5.4-10.7l-4.1,2.7 c1.9,0.4,4.5,3.8,4.7,6.5c-6.4,4.6-18.3-5.1-19.3-9.8l-15.5,9c-0.2-2.7,1.2-4.2,2.5-5.8c-5.2,5.1-2.3-10.7-8.4-2.3 c1.5,2,0.3,5.5,0.5,7.4c-5-5.2-14.3-4.6-20.8-1.8l0.3-6.4c-12.7-0.7-25.7,4.9-39.7,5.8c5.5,2.6,6.2,13.6,2.4,14.9l-3.2-9.5 c-1.7,6.2,4.9,3.4,0.7,11.1c-5.4-0.8-5.4-10.7-2.9-14.1l-5.8,3.8c-0.9-2.9,0.4-4.5,0.1-8.2c-1.6,6.2-12.6-8.9-14.6,1.8l-0.9-2.9 c-13.9,0.9-19.7,4.7-31,6c1.2,8.4-3.5,6.8-5.8,13.8c-8.8-2-19.2-7.9-29.1-6.5c-6.4,4.6-0.9,7.2-3.2,12.4c-1.9-7.6-11.8-6.2-7.5-11.9 c-11.9,2.1-15.2,2.6-29.4,9.9c2.2,3,4.3,4.2,3.7,6.9c-2.5,1.5-6.9-2.7-7.1-6.4l0.6-0.8c-15,12.4-42.5-18.3-53.7-3.3l-12.6,9.2 c-6.8-0.8,2.9-6-2.6-10.4c-13.1,13.8-24.4-0.1-35.6,9.2c-13.5-21.7-34.3,4.1-49.8-9.3l1.7,5.2c-2.5,5.4-4.6-2.7-7.4-3.7 c1.1,4.1,4.5,4.5,2.8,7.5c-27.7,8.4-60.7-3.5-91-6.1c-11-0.6-1.5,27.8-17.3,16.1l2.2-10.1c-19.8,13.3-44.6,2.8-64.2,14.3 c0.9-2.3,0.4-5.3,2.5-5.4c-5.7-6.8-16.7,0.8-15.8,6.7c-3.4-0.4-1.7-5.2-4.2-8c-5.2-3.9-9.8,9.9-13.4,3c-0.4-0.7,0.1-1.5,0.6-2.1 c-3.5,2.2-12.5,0-8.6,7.2c-8.6-3.4-14.7,4.8-21.9,0.3c-2.5,9.5-14.4-3.4-13.5,9.7c-1.8-13.5-15.9-9.8-19.8-3.2 c1-4.2-5.1-3.9-4.1-9.7c-5.8,0.6-10.6,3.5-8.4,10.3c-13.3-15.3-19.1,14.5-28.6-5.7c-15.9,8.4-31,14.5-45.8,18.7 c-1.8-13.4,16.9-2.5,13.7-16.6c-13.7,6.5-20.2,18.7-35.2,16.4c-4-1.5,1.2-6,2.1-8.3c-13.6,6.5-28.4,0.8-40.2,9 c3.7,7.9-6.5,17.2-7.3,22c0.9-16.6-13.6-3-10.5-25.3c-1.5,1.3-3.1,4.3-2.1,8.3c-2.7-1-3.9-3.3-2.2-8.1c-8.6,3.9-4.2,10.2-12.6,10.7 c-0.5-2.9,1-4.2,1.3-7.7c-3.2,6-6.5,12.1-13.9,10.1c0.1-1.7-0.9-3.6,0.5-4.1c-11.6,2.1-17.7,16.6-31.7,12.1 c1.8-13.1-5.2-3.9-7.8-14.9l-6.6,3.8l3.7,5.1c-6.3,0.3-10.4,8.7-16.4,5.5l3.8-4.9l-11.4,2.9l7.4,3.7c-5.3,6.2,3,14-5.8,11.5 c1.5-1.3-6.3,0.3-10.6-6l0,0c-2.5,3.7-5,7.7-10.1,5.3c-1.8-3.4-1.1-12.3-2.4-14.6c-1.5,9.2-13.5,3.9-16.2,13 c0.5-2.7-0.3-7.6-0.9-8.6l-1.3,7.7c-3.3-2.2-3.9-3.4-4.2-8c-8.9-0.8,5.2,13.8-6.2,8.5c0.7-0.6,0.1-1.8,1.7-3 c-10.9-2.4-19.2,6.2-29.3,3.2c-4.7-10.9,7.8-3.3,3-12.5c-13.3,3-26.2,15.4-39.9,13.7l2.6,1.1c0.8,15.6-10.8-6.4-16.4,0.5 c1.1-2,0.4-8.4,0.3-6.7c-9.5-1.9-17.9,5.2-30.9,11.1l1-4.2c-6-3.2-14.5-1.1-20.6-2.5c-1.1,4.1-4.4,3.7-1.5,9.5 c-21.8-21.7-32,14.8-51.1-3.2c1.9-0.2,3.9-3.9,2.5-3.7l-12.8,4.7c2.3,6.8,2.5,4,6.2,9.1c-1,4.2-4.3,7.6-7.6,7.9c5.3-5-2-11-5.2-14.7 c0.8,2.1,0.3,4.4,0.9,6.5c-9.1-11.7,1.2,13.9-9.9,6.4l-0.1-3.6c-3.3,2.1-5.8,7.1-9.9,6.4c-2.9-7.8,3.2-4,2.4-10.5 c-5.4,0.8-8.2,15.8-14.5,8.3c2-2.3,5.3-2.7,7.3-5c-7-8.9-7.2-6.5-11.5-7.7l0.4,0.2l-10-3.6l2.7,2.3c-3.3,21.1-13.2,4.8-20.1,19 c6.8-13.5,0.2-7.5-0.6-16.6c-2.7-2.3-6.9-4.9-6.3-7.5c-3.1,7.6-8.2-5.2-12.6,5.8c-0.8-2.9-4.7,0.1-5-7.3c-5.3,2.7,2.2,5,2.4,8.6 c-7.1,10.5-22.6-10.5-32.8,3.9c-7.9,5.1-9.7,12.6-15,18.2l-6,0.4c-0.5-3.7,2.5-7.6,2.5-7.6c-6.2-3.9-10.2-2.8-14.7,0.9 c0.6-2.6-0.8-4.6-2.9-7.8c-4,1.1-1,10.7-7.2,6.9c0.4-3.3,0.7-8.5,2.2-11.9c-4.4,3-8.3,8.8-12.8,11.7c-2.2-5,1.8-7.9,2.9-11.3 c-5.3,2.7-13.9,5.6-14.3,13.7l3,1.9c-1-1.8-0.9-6.5,0.1-7.7c3.8-6.6,7.5,2.3,8.2,5.1l-3.2,2.1c1.3,3.2,2.6,5.1,3.9,6l-19.4,1.3 c2.4-5.1,4.4-13.3,0.9-21.8c-1.7,9.7-3.1,5.8-4.8,17.3c-2.6,1.3-5.5-2.8-5.6-6.4c-0.6,2.6-4.7-1.8-5.2,4.4c5,7.4,9.7,7.3,13.4,0.7 c1.3,1.8,1,4.1,0.9,5.8L0,177.1z'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p, .footer a{
+  color: white;
+  margin: 0.2rem 0;
+}
+.tel_mail i{
+  margin-right: 0.5rem;
+}
+.icon_tel_mail{
+  display: none;
+}
+.reseau{
+  font-size: 2rem;
+}
+.reseau a{
+  margin-right: 2rem;
+}
+.reseau a:last-child{
+  margin-right: 0;
+}
+
+
+.avis{
+  position: relative;
+  background-image: url("../img/avis_client.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.avis:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1920 200' enable-background='new 0 0 1920 200' xml:space='preserve'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23FAFAFA' d='M0,177.1V200h1920V8.1l-1.1-2L1920,6V3.6c-1.1,1.3-2,3.5-2.8,5.4 c-1.3-3.5-2.7-5.9-4.6-7.1l-5.6,13.8c-1.9-5.3,1.7-11-4.1-13.6c-2.6,6.4,5.6,11.9,0.2,16.3c-4.9-6-4.6-11.2-8.2-5.5 c-1.2-3.2-0.8-5.5,0.5-7.1c-3.3,4-9.9,2.3-10.7,9.6c-5.3-7.5-13.1,3-15-10.1c-0.7,3.2-5.3,10.8-8.8,11.6c4-16.1-13.8,0.1-15-16.8 c-2.5,14.4-16.9,7.6-24.2,15.9c0.3-1,0.7-2.7,1.4-2.9c-4.8-1-7-5-10.5-7.3c1.4,11.7-5.9,14.9-8.8,22.4c-7.9-10.8,1.4-13.9-2.4-24.6 c1.9,9.4-8.9,10.2-5.5,17.8c-5.8-6.6-4.6-3.1-8.6-12.6c1.7,14.6-3.9,2.8-6.2,11.9c-7.9-6.7-4-13.5-10.7-8.5 c-4.2-4.2,1.4-9.8,1.4-9.8c-7.6,0.3-1.7,11-2.2,17.4c-8.4,3.7-5.5-7.7-9.5-13.1c-5.1,3.3-7.6,13.7-11.9,13.5c-0.6-1.8-1.6-2.4-1-4.7 c-4.4,9.1-17.5,1.7-22.5,13.1c-0.7-1-1.1-1.8-1.4-2.7c2.1,5.4,3.1,11,3.6,15c-3.3,0.4-5.1,7.4-7.6,0.3c2.1,0.1,1.8-2.9,2.4-5.1 l-2.9,3.4c-4.9-10.1,4.2-3.9,2.9-11.6c-6.3,3.8-12.8,13-18.6,10.4c-2.8-10,11.8-4.3,3.1-12.7l8.8,3.3c-8.9-15.4,5.1,0.8-3.5-15.8 c-11.2-2.2-11.1,6-22.3,3.8c-1.5,5.8,2.3,8.2,0.8,14c-13.4,11.2-16.3-24.5-25.1-10.3c-1.8,6.9-0.7,19.8-9.8,13.6l0.8-11.6 c-10.6-0.4-3.1,16.8-15.3,9.9c1.2-4.6,7.6-4.4,5.7-5.6c-8.5-8.5-3.9,6.8-9.3,7.2l-2.8-10c-10.8,2.3-21.7,10.5-33.6,13.3 c0.2-3,1.8-6.4-1.7-9.2c-14.5,6.2-33.1,1.1-49-3.8l-4.2,9.1c-1.4,0-3.1-3.7-2-5.5c-6.4-2.9,0.7,5.5-1.6,9.1 c-3.2,0.8-5.2-4.7-3.5-7.4c-8.9,8.1-26.4,18-38.8,9.5l1.7-2.7c-9-2.9-6.5,18.5-15.6,11l1.3-1.7c-18.8-2.5-37.7,6.9-53.7-5.2 c-0.5,12.7-19-4.3-17.2,13.3c-11.9-7.9-9.4-11.2-25.1-16.1c-4-0.5-3.9,11.4-8.5,13.5l-1.7-9.1l-4.9,10l-5.4-10.7l-4.1,2.7 c1.9,0.4,4.5,3.8,4.7,6.5c-6.4,4.6-18.3-5.1-19.3-9.8l-15.5,9c-0.2-2.7,1.2-4.2,2.5-5.8c-5.2,5.1-2.3-10.7-8.4-2.3 c1.5,2,0.3,5.5,0.5,7.4c-5-5.2-14.3-4.6-20.8-1.8l0.3-6.4c-12.7-0.7-25.7,4.9-39.7,5.8c5.5,2.6,6.2,13.6,2.4,14.9l-3.2-9.5 c-1.7,6.2,4.9,3.4,0.7,11.1c-5.4-0.8-5.4-10.7-2.9-14.1l-5.8,3.8c-0.9-2.9,0.4-4.5,0.1-8.2c-1.6,6.2-12.6-8.9-14.6,1.8l-0.9-2.9 c-13.9,0.9-19.7,4.7-31,6c1.2,8.4-3.5,6.8-5.8,13.8c-8.8-2-19.2-7.9-29.1-6.5c-6.4,4.6-0.9,7.2-3.2,12.4c-1.9-7.6-11.8-6.2-7.5-11.9 c-11.9,2.1-15.2,2.6-29.4,9.9c2.2,3,4.3,4.2,3.7,6.9c-2.5,1.5-6.9-2.7-7.1-6.4l0.6-0.8c-15,12.4-42.5-18.3-53.7-3.3l-12.6,9.2 c-6.8-0.8,2.9-6-2.6-10.4c-13.1,13.8-24.4-0.1-35.6,9.2c-13.5-21.7-34.3,4.1-49.8-9.3l1.7,5.2c-2.5,5.4-4.6-2.7-7.4-3.7 c1.1,4.1,4.5,4.5,2.8,7.5c-27.7,8.4-60.7-3.5-91-6.1c-11-0.6-1.5,27.8-17.3,16.1l2.2-10.1c-19.8,13.3-44.6,2.8-64.2,14.3 c0.9-2.3,0.4-5.3,2.5-5.4c-5.7-6.8-16.7,0.8-15.8,6.7c-3.4-0.4-1.7-5.2-4.2-8c-5.2-3.9-9.8,9.9-13.4,3c-0.4-0.7,0.1-1.5,0.6-2.1 c-3.5,2.2-12.5,0-8.6,7.2c-8.6-3.4-14.7,4.8-21.9,0.3c-2.5,9.5-14.4-3.4-13.5,9.7c-1.8-13.5-15.9-9.8-19.8-3.2 c1-4.2-5.1-3.9-4.1-9.7c-5.8,0.6-10.6,3.5-8.4,10.3c-13.3-15.3-19.1,14.5-28.6-5.7c-15.9,8.4-31,14.5-45.8,18.7 c-1.8-13.4,16.9-2.5,13.7-16.6c-13.7,6.5-20.2,18.7-35.2,16.4c-4-1.5,1.2-6,2.1-8.3c-13.6,6.5-28.4,0.8-40.2,9 c3.7,7.9-6.5,17.2-7.3,22c0.9-16.6-13.6-3-10.5-25.3c-1.5,1.3-3.1,4.3-2.1,8.3c-2.7-1-3.9-3.3-2.2-8.1c-8.6,3.9-4.2,10.2-12.6,10.7 c-0.5-2.9,1-4.2,1.3-7.7c-3.2,6-6.5,12.1-13.9,10.1c0.1-1.7-0.9-3.6,0.5-4.1c-11.6,2.1-17.7,16.6-31.7,12.1 c1.8-13.1-5.2-3.9-7.8-14.9l-6.6,3.8l3.7,5.1c-6.3,0.3-10.4,8.7-16.4,5.5l3.8-4.9l-11.4,2.9l7.4,3.7c-5.3,6.2,3,14-5.8,11.5 c1.5-1.3-6.3,0.3-10.6-6l0,0c-2.5,3.7-5,7.7-10.1,5.3c-1.8-3.4-1.1-12.3-2.4-14.6c-1.5,9.2-13.5,3.9-16.2,13 c0.5-2.7-0.3-7.6-0.9-8.6l-1.3,7.7c-3.3-2.2-3.9-3.4-4.2-8c-8.9-0.8,5.2,13.8-6.2,8.5c0.7-0.6,0.1-1.8,1.7-3 c-10.9-2.4-19.2,6.2-29.3,3.2c-4.7-10.9,7.8-3.3,3-12.5c-13.3,3-26.2,15.4-39.9,13.7l2.6,1.1c0.8,15.6-10.8-6.4-16.4,0.5 c1.1-2,0.4-8.4,0.3-6.7c-9.5-1.9-17.9,5.2-30.9,11.1l1-4.2c-6-3.2-14.5-1.1-20.6-2.5c-1.1,4.1-4.4,3.7-1.5,9.5 c-21.8-21.7-32,14.8-51.1-3.2c1.9-0.2,3.9-3.9,2.5-3.7l-12.8,4.7c2.3,6.8,2.5,4,6.2,9.1c-1,4.2-4.3,7.6-7.6,7.9c5.3-5-2-11-5.2-14.7 c0.8,2.1,0.3,4.4,0.9,6.5c-9.1-11.7,1.2,13.9-9.9,6.4l-0.1-3.6c-3.3,2.1-5.8,7.1-9.9,6.4c-2.9-7.8,3.2-4,2.4-10.5 c-5.4,0.8-8.2,15.8-14.5,8.3c2-2.3,5.3-2.7,7.3-5c-7-8.9-7.2-6.5-11.5-7.7l0.4,0.2l-10-3.6l2.7,2.3c-3.3,21.1-13.2,4.8-20.1,19 c6.8-13.5,0.2-7.5-0.6-16.6c-2.7-2.3-6.9-4.9-6.3-7.5c-3.1,7.6-8.2-5.2-12.6,5.8c-0.8-2.9-4.7,0.1-5-7.3c-5.3,2.7,2.2,5,2.4,8.6 c-7.1,10.5-22.6-10.5-32.8,3.9c-7.9,5.1-9.7,12.6-15,18.2l-6,0.4c-0.5-3.7,2.5-7.6,2.5-7.6c-6.2-3.9-10.2-2.8-14.7,0.9 c0.6-2.6-0.8-4.6-2.9-7.8c-4,1.1-1,10.7-7.2,6.9c0.4-3.3,0.7-8.5,2.2-11.9c-4.4,3-8.3,8.8-12.8,11.7c-2.2-5,1.8-7.9,2.9-11.3 c-5.3,2.7-13.9,5.6-14.3,13.7l3,1.9c-1-1.8-0.9-6.5,0.1-7.7c3.8-6.6,7.5,2.3,8.2,5.1l-3.2,2.1c1.3,3.2,2.6,5.1,3.9,6l-19.4,1.3 c2.4-5.1,4.4-13.3,0.9-21.8c-1.7,9.7-3.1,5.8-4.8,17.3c-2.6,1.3-5.5-2.8-5.6-6.4c-0.6,2.6-4.7-1.8-5.2,4.4c5,7.4,9.7,7.3,13.4,0.7 c1.3,1.8,1,4.1,0.9,5.8L0,177.1z'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  z-index: 2;
+}
+.avis:after{
+  position: absolute;
+  content:"";
+  width: 100%;
+  height: 200px;
+  top:0;
+  left:0;
+  transform: rotate(-180deg);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1920 200' enable-background='new 0 0 1920 200' xml:space='preserve'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23FAFAFA' d='M0,177.1V200h1920V8.1l-1.1-2L1920,6V3.6c-1.1,1.3-2,3.5-2.8,5.4 c-1.3-3.5-2.7-5.9-4.6-7.1l-5.6,13.8c-1.9-5.3,1.7-11-4.1-13.6c-2.6,6.4,5.6,11.9,0.2,16.3c-4.9-6-4.6-11.2-8.2-5.5 c-1.2-3.2-0.8-5.5,0.5-7.1c-3.3,4-9.9,2.3-10.7,9.6c-5.3-7.5-13.1,3-15-10.1c-0.7,3.2-5.3,10.8-8.8,11.6c4-16.1-13.8,0.1-15-16.8 c-2.5,14.4-16.9,7.6-24.2,15.9c0.3-1,0.7-2.7,1.4-2.9c-4.8-1-7-5-10.5-7.3c1.4,11.7-5.9,14.9-8.8,22.4c-7.9-10.8,1.4-13.9-2.4-24.6 c1.9,9.4-8.9,10.2-5.5,17.8c-5.8-6.6-4.6-3.1-8.6-12.6c1.7,14.6-3.9,2.8-6.2,11.9c-7.9-6.7-4-13.5-10.7-8.5 c-4.2-4.2,1.4-9.8,1.4-9.8c-7.6,0.3-1.7,11-2.2,17.4c-8.4,3.7-5.5-7.7-9.5-13.1c-5.1,3.3-7.6,13.7-11.9,13.5c-0.6-1.8-1.6-2.4-1-4.7 c-4.4,9.1-17.5,1.7-22.5,13.1c-0.7-1-1.1-1.8-1.4-2.7c2.1,5.4,3.1,11,3.6,15c-3.3,0.4-5.1,7.4-7.6,0.3c2.1,0.1,1.8-2.9,2.4-5.1 l-2.9,3.4c-4.9-10.1,4.2-3.9,2.9-11.6c-6.3,3.8-12.8,13-18.6,10.4c-2.8-10,11.8-4.3,3.1-12.7l8.8,3.3c-8.9-15.4,5.1,0.8-3.5-15.8 c-11.2-2.2-11.1,6-22.3,3.8c-1.5,5.8,2.3,8.2,0.8,14c-13.4,11.2-16.3-24.5-25.1-10.3c-1.8,6.9-0.7,19.8-9.8,13.6l0.8-11.6 c-10.6-0.4-3.1,16.8-15.3,9.9c1.2-4.6,7.6-4.4,5.7-5.6c-8.5-8.5-3.9,6.8-9.3,7.2l-2.8-10c-10.8,2.3-21.7,10.5-33.6,13.3 c0.2-3,1.8-6.4-1.7-9.2c-14.5,6.2-33.1,1.1-49-3.8l-4.2,9.1c-1.4,0-3.1-3.7-2-5.5c-6.4-2.9,0.7,5.5-1.6,9.1 c-3.2,0.8-5.2-4.7-3.5-7.4c-8.9,8.1-26.4,18-38.8,9.5l1.7-2.7c-9-2.9-6.5,18.5-15.6,11l1.3-1.7c-18.8-2.5-37.7,6.9-53.7-5.2 c-0.5,12.7-19-4.3-17.2,13.3c-11.9-7.9-9.4-11.2-25.1-16.1c-4-0.5-3.9,11.4-8.5,13.5l-1.7-9.1l-4.9,10l-5.4-10.7l-4.1,2.7 c1.9,0.4,4.5,3.8,4.7,6.5c-6.4,4.6-18.3-5.1-19.3-9.8l-15.5,9c-0.2-2.7,1.2-4.2,2.5-5.8c-5.2,5.1-2.3-10.7-8.4-2.3 c1.5,2,0.3,5.5,0.5,7.4c-5-5.2-14.3-4.6-20.8-1.8l0.3-6.4c-12.7-0.7-25.7,4.9-39.7,5.8c5.5,2.6,6.2,13.6,2.4,14.9l-3.2-9.5 c-1.7,6.2,4.9,3.4,0.7,11.1c-5.4-0.8-5.4-10.7-2.9-14.1l-5.8,3.8c-0.9-2.9,0.4-4.5,0.1-8.2c-1.6,6.2-12.6-8.9-14.6,1.8l-0.9-2.9 c-13.9,0.9-19.7,4.7-31,6c1.2,8.4-3.5,6.8-5.8,13.8c-8.8-2-19.2-7.9-29.1-6.5c-6.4,4.6-0.9,7.2-3.2,12.4c-1.9-7.6-11.8-6.2-7.5-11.9 c-11.9,2.1-15.2,2.6-29.4,9.9c2.2,3,4.3,4.2,3.7,6.9c-2.5,1.5-6.9-2.7-7.1-6.4l0.6-0.8c-15,12.4-42.5-18.3-53.7-3.3l-12.6,9.2 c-6.8-0.8,2.9-6-2.6-10.4c-13.1,13.8-24.4-0.1-35.6,9.2c-13.5-21.7-34.3,4.1-49.8-9.3l1.7,5.2c-2.5,5.4-4.6-2.7-7.4-3.7 c1.1,4.1,4.5,4.5,2.8,7.5c-27.7,8.4-60.7-3.5-91-6.1c-11-0.6-1.5,27.8-17.3,16.1l2.2-10.1c-19.8,13.3-44.6,2.8-64.2,14.3 c0.9-2.3,0.4-5.3,2.5-5.4c-5.7-6.8-16.7,0.8-15.8,6.7c-3.4-0.4-1.7-5.2-4.2-8c-5.2-3.9-9.8,9.9-13.4,3c-0.4-0.7,0.1-1.5,0.6-2.1 c-3.5,2.2-12.5,0-8.6,7.2c-8.6-3.4-14.7,4.8-21.9,0.3c-2.5,9.5-14.4-3.4-13.5,9.7c-1.8-13.5-15.9-9.8-19.8-3.2 c1-4.2-5.1-3.9-4.1-9.7c-5.8,0.6-10.6,3.5-8.4,10.3c-13.3-15.3-19.1,14.5-28.6-5.7c-15.9,8.4-31,14.5-45.8,18.7 c-1.8-13.4,16.9-2.5,13.7-16.6c-13.7,6.5-20.2,18.7-35.2,16.4c-4-1.5,1.2-6,2.1-8.3c-13.6,6.5-28.4,0.8-40.2,9 c3.7,7.9-6.5,17.2-7.3,22c0.9-16.6-13.6-3-10.5-25.3c-1.5,1.3-3.1,4.3-2.1,8.3c-2.7-1-3.9-3.3-2.2-8.1c-8.6,3.9-4.2,10.2-12.6,10.7 c-0.5-2.9,1-4.2,1.3-7.7c-3.2,6-6.5,12.1-13.9,10.1c0.1-1.7-0.9-3.6,0.5-4.1c-11.6,2.1-17.7,16.6-31.7,12.1 c1.8-13.1-5.2-3.9-7.8-14.9l-6.6,3.8l3.7,5.1c-6.3,0.3-10.4,8.7-16.4,5.5l3.8-4.9l-11.4,2.9l7.4,3.7c-5.3,6.2,3,14-5.8,11.5 c1.5-1.3-6.3,0.3-10.6-6l0,0c-2.5,3.7-5,7.7-10.1,5.3c-1.8-3.4-1.1-12.3-2.4-14.6c-1.5,9.2-13.5,3.9-16.2,13 c0.5-2.7-0.3-7.6-0.9-8.6l-1.3,7.7c-3.3-2.2-3.9-3.4-4.2-8c-8.9-0.8,5.2,13.8-6.2,8.5c0.7-0.6,0.1-1.8,1.7-3 c-10.9-2.4-19.2,6.2-29.3,3.2c-4.7-10.9,7.8-3.3,3-12.5c-13.3,3-26.2,15.4-39.9,13.7l2.6,1.1c0.8,15.6-10.8-6.4-16.4,0.5 c1.1-2,0.4-8.4,0.3-6.7c-9.5-1.9-17.9,5.2-30.9,11.1l1-4.2c-6-3.2-14.5-1.1-20.6-2.5c-1.1,4.1-4.4,3.7-1.5,9.5 c-21.8-21.7-32,14.8-51.1-3.2c1.9-0.2,3.9-3.9,2.5-3.7l-12.8,4.7c2.3,6.8,2.5,4,6.2,9.1c-1,4.2-4.3,7.6-7.6,7.9c5.3-5-2-11-5.2-14.7 c0.8,2.1,0.3,4.4,0.9,6.5c-9.1-11.7,1.2,13.9-9.9,6.4l-0.1-3.6c-3.3,2.1-5.8,7.1-9.9,6.4c-2.9-7.8,3.2-4,2.4-10.5 c-5.4,0.8-8.2,15.8-14.5,8.3c2-2.3,5.3-2.7,7.3-5c-7-8.9-7.2-6.5-11.5-7.7l0.4,0.2l-10-3.6l2.7,2.3c-3.3,21.1-13.2,4.8-20.1,19 c6.8-13.5,0.2-7.5-0.6-16.6c-2.7-2.3-6.9-4.9-6.3-7.5c-3.1,7.6-8.2-5.2-12.6,5.8c-0.8-2.9-4.7,0.1-5-7.3c-5.3,2.7,2.2,5,2.4,8.6 c-7.1,10.5-22.6-10.5-32.8,3.9c-7.9,5.1-9.7,12.6-15,18.2l-6,0.4c-0.5-3.7,2.5-7.6,2.5-7.6c-6.2-3.9-10.2-2.8-14.7,0.9 c0.6-2.6-0.8-4.6-2.9-7.8c-4,1.1-1,10.7-7.2,6.9c0.4-3.3,0.7-8.5,2.2-11.9c-4.4,3-8.3,8.8-12.8,11.7c-2.2-5,1.8-7.9,2.9-11.3 c-5.3,2.7-13.9,5.6-14.3,13.7l3,1.9c-1-1.8-0.9-6.5,0.1-7.7c3.8-6.6,7.5,2.3,8.2,5.1l-3.2,2.1c1.3,3.2,2.6,5.1,3.9,6l-19.4,1.3 c2.4-5.1,4.4-13.3,0.9-21.8c-1.7,9.7-3.1,5.8-4.8,17.3c-2.6,1.3-5.5-2.8-5.6-6.4c-0.6,2.6-4.7-1.8-5.2,4.4c5,7.4,9.7,7.3,13.4,0.7 c1.3,1.8,1,4.1,0.9,5.8L0,177.1z'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  z-index: 1;
+}
+
+.carre_orange{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e39020;
+  opacity: 0.8;
+  z-index: 0;
+}
+.texte_avis{
+  padding: 15rem 0;
+  color: #FAFAFA;
+  width: 100%;
+}
+.h2_white{
+  color: #FAFAFA;
+}
+.h2_white:after{
+  background-color: #FAFAFA !important;
+}
+.texte_avis .h2_white{
+  margin-left: 20%;
+  margin-top: 0;
+}
+.avis_client{
+  color: #FAFAFA;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  z-index: 5;
+}
+.texte_avis .quote{
+  font-size: 30rem;
+  color: #FAFAFA;
+  position: absolute;
+  opacity: 0.3;
+  top: 50%;
+  left:20%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.auteur{
+  position: relative;
+  text-align: right;
+  font-weight: bold;
+  color:#FAFAFA;
+  margin:auto;
+  margin-top: 2rem;
+  width: 80%;
+  z-index: 5;
+}
+
+/*----------------------RESPONSIVE---------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+  .container{width: 950px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .container{width: 700px;}
+}
+@media screen and (min-width: 575px) and (max-width: 768px){
+  .container{width: 500px;}
+}
+@media screen and (max-width: 575px){
+  .container{width: 100%;}
+}
+
+@media screen and (max-width: 1366px){
+  .presentation{padding: 0 7rem;}
+  .titre_banniere{font-size: 3rem;}
+  .photo_sejour{height: 250px;}
+  .top_barre{font-size: 0.85rem;}
+  .menu li{padding-left: 7px; padding-right: 7px; font-size: 0.85rem;}
+}
+@media screen and (max-width: 1024px){
+  .texte_banniere .centrer_paragraphe{display: none;}
+  .presentation{padding: 0 5rem;}
+  .photo_sejour{height: 200px;}
+  .fleche{font-size: 2rem;}
+  .fleche_droite{right: 2rem;}
+  .fleche_gauche{left: 2rem;}
+  .avis{padding: 2rem 0;}
+  .top_barre a{font-size: 0.7rem;}
+  .menu_logo strong{font-size: 1.5rem;}
+  .menu_logo i{font-size: 3rem;}
+  .menu{padding-left: 0;}
+  .texte_avis{padding: 10rem 0;}
+  footer{padding-top: 8rem;}
+  .menu li{padding-left: 5px; padding-right: 5px; font-size: 0.65rem;}
+}
+@media screen and (max-width: 768px){
+  .presentation{padding: 0 2rem;}
+  .button{margin-top: 0.5rem;}
+  .titre_banniere{padding: 0;}
+  .texte_banniere p{width: 100%;}
+  .photo_banniere{min-height: 80vh;object-fit: cover;}
+  .container_sejour{flex-direction: column;}
+  .sejour{width:80%; margin:auto; padding-bottom: 2rem;}
+  .sejour:last-child{padding-bottom: 0;}
+  .text_sejour{transform: none;}
+  .photo_sejour{height: auto;border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+  .images_ligne a{width:25%;}
+  .carte{flex-direction: column;}
+  .carte_image{width: 100%;}
+  .carte_content{width: 100%;}
+  .fleche{display:none;}
+  .group_bullet{display: block;}
+  .avis_photo{height:500px;object-fit: cover;}
+  .avis_client{width:100%;}
+
+  .icon_respo{display: block;}
+  #menuToggle input{display: block; }
+  #menuToggle span{display: block; }
+  #menuToggle input:checked ~ .menu{transform: none;}
+  .menu{background-color: black;flex-direction: column; align-items: flex-end; position: fixed; margin: 0; top:0; right:0 ; padding:20%; padding-top:150px; height:100vh; list-style-type: none; -webkit-font-smoothing: antialiased;  transform: translate(100%, 0);transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);}
+  .menu li{display: block; text-align: right; font-size: 1rem; padding-bottom: 0.5rem; border: none; padding-left: 0; padding-right: 0;}
+  .menu i{display: none;}
+  .top_barre a{font-size: 0.5rem;}
+  .top_barre{margin: 0.4rem 0;}
+  .top_barre span{display:none;}
+  .texte_avis{padding: 8rem 0;}
+
+  footer{padding-top: 7rem;}
+  .reseau{display: flex;flex-direction: column;}
+  .reseau a{margin:0;}
+
+  section{margin-bottom:5rem;}
+  }
+
+@media screen and (max-width: 575px){
+  #menuToggle{margin-right: 1rem;}
+  header{position: absolute;}
+  .top_barre{margin-right: 1rem;}
+  .top_barre a{padding:4px;font-size: 0.7rem;}
+  .presentation{padding: 0 3rem;}
+  h2{margin-left: 1rem;}
+  h1{font-size: 1.5rem;}
+  .photo_banniere{min-height: 80vh;object-fit: cover;}
+  .images_ligne a{width:50%; padding-bottom: 0.5rem;}
+  .images_ligne a:nth-child(7), .images_ligne a:nth-child(8){padding-bottom: 0;}
+  .carte_content{width:100%;}
+  .carte_content p{padding: 0 3rem;}
+  .avis_client{padding: 0 3rem; width: auto;}
+  .menu{padding-top:120px; padding-right: 29px;}
+  .texte_avis{padding: 7rem 0;}
+  footer{padding-top: 5rem;}
+  .footer{margin-left: 1rem; margin-right: 1rem; flex-direction: column; align-items: flex-start;}
+  .footer div{margin-right: 0.2rem; margin-bottom: 1rem;}
+  .footer div:last-child{margin-right: 0; margin-bottom: 0}
+  .reseau{flex-direction: row;}
+  .reseau a{margin-right: 2rem;}
+}
